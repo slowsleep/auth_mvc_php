@@ -3,7 +3,7 @@
 
 <?php if (Auth::checkUserAuth()): ?>
     <p>Hello, <?= isset($_SESSION["user"]["login"]) && $_SESSION["user"]["login"] ? $_SESSION["user"]["login"] : $_SESSION["user"]["first_name"] ?></p>
-    <p>На эту кнопку может нажать только пользователь VK</p>
+    <p>На эту кнопку не может нажать только пользователь VK</p>
     <button id="clickme" <?php if ($_SESSION["user"]["role"] == 2): ?>disabled<?php endif; ?> >Нажми на меня!!!!</button>
 <?php else: ?>
     <p>Hello, guest</p>
