@@ -26,3 +26,4 @@ if (isset($_POST["login"]) && isset($_POST["pass"]))
     <input type="password" name="pass"> <br />
     <input type="submit" value="Зарегистрироваться">
 </form>
+<?php include "vk_auth.php"; ?>
