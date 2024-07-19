@@ -21,9 +21,18 @@ if (isset($_POST["login"]) && isset($_POST["pass"]))
 
 <h1>Регистрация</h1>
 
-<form method="post" action="">
-    <input type="text" name="login" placeholder="Логин"><br />
-    <input type="password" name="pass"> <br />
-    <input type="submit" value="Зарегистрироваться">
+<form class="mb-3" method="post" action="">
+    <div class="mb-3">
+        <label class="form-label">Логин</label>
+        <input class="form-control" type="text" name="login" placeholder="Логин" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Пароль</label>
+        <input class="form-control" type="password" name="pass" required>
+    </div>
+    <div>
+        <input class="btn btn-success w-100" type="submit" value="Зарегистрироваться">
+    </div>
 </form>
+
 <?php include "vk_auth.php"; ?>

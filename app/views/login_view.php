@@ -47,11 +47,20 @@ if (isset($_POST["login"]) && isset($_POST["pass"])) {
 
 <h1>Вход</h1>
 
-<form method="post" action="">
-    <input type="text" name="login" placeholder="Логин" required><br />
-    <input type="password" name="pass" required> <br />
+<form class="mb-3" method="post" action="">
+    <div class="mb-3">
+        <label class="form-label">Логин</label>
+        <input class="form-control" type="text" name="login" placeholder="Логин" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Пароль</label>
+        <input class="form-control" type="password" name="pass" required>
+    </div>
     <input type="hidden" name="token" value="<?= $_SESSION['CSRF'] ?>">
-    <input type="checkbox" name="remember" value="1">Запомнить меня<br />
-    <input type="submit" value="Войти">
+    <div class="mb-2">
+        <input type="checkbox" name="remember" value="1">Запомнить меня
+    </div>
+    <input class="btn btn-success w-100"  type="submit" value="Войти">
 </form>
+
 <?php include "vk_auth.php"; ?>
