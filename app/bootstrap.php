@@ -13,6 +13,7 @@ require_once 'app/models/user_model.php';
 require_once 'app/models/vkuser_model.php';
 require_once 'app/helpers/sqliteDbManager.php';
 require_once 'app/helpers/randomString.php';
+require_once 'app/logger/logger.php';
 
 $db_file = new SQLiteDbManager();
 $db_file->initDB();

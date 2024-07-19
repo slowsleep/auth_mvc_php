@@ -55,6 +55,8 @@ class User_Model extends Model
             error_log("Ошибка при входе (сверка логина и пароля)");
             error_log($e->getMessage());
         }
+        global $logger;
+        $logger->error("Пользователь не найден");
         return false;
     }
 
