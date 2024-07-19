@@ -53,8 +53,8 @@ echo "<script>".
 <h1>Вход</h1>
 
 <form method="post" action="">
-    <input type="text" name="login" placeholder="Логин"><br />
-    <input type="password" name="pass"> <br />
+    <input type="text" name="login" placeholder="Логин" required><br />
+    <input type="password" name="pass" required> <br />
     <input type="hidden" name="token" value="<?= $_SESSION['CSRF'] ?>">
     <input type="checkbox" name="remember" value="1">Запомнить меня<br />
     <input type="submit" value="Войти">
