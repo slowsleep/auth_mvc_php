@@ -10,20 +10,25 @@
 
 <body>
     <header>
-        <ul>
-            <li>
-                <a href="/?page=main">Главная</a>
-            </li>
-            <li>
-                <a href="/?page=login">Войти</a>
-            </li>
-            <li>
-                <a href="/?page=registration">Зарегистрироваться</a>
-            </li>
-            <li>
-                <a href="/?page=logout">Выйти</a>
-            </li>
-        </ul>
+        <nav>
+            <ul >
+                <li>
+                    <a href="/?page=main">Главная</a>
+                </li>
+                <li>
+                    <a href="/?page=special">Специальная страница</a>
+                </li>
+                <li>
+                    <a href="/?page=login">Войти</a>
+                </li>
+                <li>
+                    <a href="/?page=registration">Зарегистрироваться</a>
+                </li>
+                <li>
+                    <a href="/?page=logout">Выйти</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <?php include 'app/views/' . $content_view ?>
